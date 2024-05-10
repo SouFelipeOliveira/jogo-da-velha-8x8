@@ -49,7 +49,7 @@ def main():
 
 
         # AI initial call
-        if game.gameMode == 'ia' and game.player == 2 and game.running:
+        if game.gamemode == 'ia' and game.player == 2 and game.running:
             
             pg.display.update()
 
