@@ -26,17 +26,13 @@ def main():
 
                 # g-gamemode
                 if event.key == pg.K_g:
-                    game.gamemode()
+                    game.gameMode()
 
                 # r-restart
                 if event.key == pg.K_r:
                     game.reset()
                     board = game.board
                     ia = game.ia
-
-                # 1-random ai
-                if event.key == pg.K_1:
-                    ia.level = 1
 
             # click event
             if event.type == pg.MOUSEBUTTONDOWN:
@@ -53,7 +49,7 @@ def main():
 
 
         # AI initial call
-        if game.gamemode == 'ia' and game.player == 2 and game.running:
+        if game.gameMode == 'ia' and game.player == 2 and game.running:
             
             pg.display.update()
 
